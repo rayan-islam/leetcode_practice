@@ -1,0 +1,3 @@
+how to get space input in cpp - getline(cin, variable)
+//char to string
+string s(1,'@')
