@@ -1,3 +1,22 @@
 how to get space input in cpp - getline(cin, variable)
 //char to string
 string s(1,'@')
+
+
+// how to use priority queue
+struct compareNode{
+        bool operator()(const ListNode* a,const ListNode* b){
+            return a->val>b->val;
+        }
+};
+
+    // gives minimum
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue<ListNode* , vector<ListNode*>,compareNode> pq;
+
+        for(auto x:lists){
+            while(x){
+                pq.push(x);
+                x=x->next;
+            }
+        }
