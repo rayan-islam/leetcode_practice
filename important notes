@@ -20,3 +20,24 @@ struct compareNode{
                 x=x->next;
             }
         }
+        
+// how to check is a row exists or not.
+vector<vector<int>> temp;
+	if(i>=0 && i<temp.size()){
+		exists;
+	}else{
+		does not exist;
+	}
+	
+	
+	
+**** BST ***
+in Order Traversal
+	left->root->right (in a bst, gives sorted list ascending order)
+pre order Traversal
+	root->left->right 
+post order traversal
+	left->right->root
+level Order traversal
+	er jonno queue use korte hobe
+	
