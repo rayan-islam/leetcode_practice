@@ -1,3 +1,12 @@
+// Convert to lowercase
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
+ 
+// sort
+	sort(nums.begin(),nums.end());
+	
+	
+# string theke ekta ekta kore input nile char dey
+ 
 how to get space input in cpp - getline(cin, variable)
 //char to string
 string s(1,'@')
@@ -40,4 +49,34 @@ post order traversal
 	left->right->root
 level Order traversal
 	er jonno queue use korte hobe
-	
+
+
+
+********************* HASHMAP on C++ ******************************
+	unordered_map<string, int> ageMap;
+
+	// Insert elements
+    ageMap["Alice"] = 25;
+    ageMap["Bob"] = 30;
+    ageMap["Charlie"] = 35;
+
+    // Access elements
+    cout << "Alice's age: " << ageMap["Alice"] << endl;
+
+    // Check if a key exists
+    if (ageMap.find("David") == ageMap.end()) {
+        cout << "David is not in the map." << endl;
+    }
+
+    // Iterate through the map
+    for (const auto& pair : ageMap) {
+        cout << pair.first << ": " << pair.second << endl;
+    }
+
+    // Remove an element
+    ageMap.erase("Bob");
+
+    // Size of the map
+    cout << "Size of the map: " << ageMap.size() << endl;
+
+    return 0;

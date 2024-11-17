@@ -16,7 +16,25 @@ public:
     }
 };
 
-int main(){
-    
+above complexity o(nlogn)
 
-}
+below complexity o(n)
+
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        unordered_map<int,int> numbers;
+        for(auto x:nums){
+            if(numbers.find(x)==numbers.end()){
+                numbers[x]=1;
+            }else{
+                numbers[x]++;
+            }
+        }
+        for(auto x:numbers){
+            if(x.second>1)
+                return true;
+        }
+        return false;
+    }
+};
