@@ -2,6 +2,42 @@
 
 using namespace std;
 
+///second solve
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        string ans="";
+        for(auto x:s){
+            if(x>=65 && x<=90 || x>=97 && x<=122 || x>=48 && x<=57){
+                if(x>=65 && x<=90){
+                    ans+=tolower(x);
+                }else{
+                    ans+=x;
+                }
+            }
+        }
+        if(!ans.size()){
+            return true;
+        }
+        int left=0;
+        int right=ans.size()-1;
+        while( left<ans.size()/2){
+            if(ans[left]!=ans[right]){
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+    
+};
+
+
+
+///////////////////////////
+
+
 class Solution {
 public:
     bool isPalindrome(string s) {

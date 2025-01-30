@@ -11,6 +11,8 @@ public:
 
 
         for(int i=0; i<nums.size();i++){
+	    if(nums[i]>0)
+		break;     //karon er pore check diye lav nai. 
             if(i>0 && nums[i]==nums[i-1]){
                 continue;
             }

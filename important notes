@@ -5,6 +5,10 @@
 	sort(nums.begin(),nums.end());
 	
 	
+// ascii range
+	x>=65 && x<=90 || x>=97 && x<=122 || x>=48 && x<=57
+	
+	
 # string theke ekta ekta kore input nile char dey
  
 how to get space input in cpp - getline(cin, variable)
