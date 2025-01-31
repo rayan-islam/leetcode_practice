@@ -3,7 +3,8 @@
  
 // sort
 	sort(nums.begin(),nums.end());
-	
+// count 
+	count(row.begin(),row.end(),0);  //ekhane row te koyta 0 ase ta count kore;
 	
 // ascii range
 	x>=65 && x<=90 || x>=97 && x<=122 || x>=48 && x<=57
